@@ -130,7 +130,7 @@ services:
         condition: on-failure
         delay: 8s
         max_attempts: 5
-    command: -c "airflow db init && airflow users create --firstname admin --lastname admin --email admin --password admin --username admin --role Admin"
+    command: -c "airflow db init && airflow users create --firstname Duong --lastname Pham --email duongptit14@gmail.com --password admin --username admin --role Admin"
     depends_on:
       - redis
       - postgres
